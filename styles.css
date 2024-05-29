@@ -1,0 +1,175 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Black background */
+    margin: 0;
+    padding: 0;
+    color: white; /* White text for better readability */
+}
+
+.container {
+    position: relative; /* Ensure relative positioning for absolute positioning of the button */
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white; /* White text inside the container */
+}
+
+h1, h2 {
+    color: #fff; /* White text for the heading */
+}
+
+p, ol, ul, label {
+    font-size: 16px;
+    color: #fff; /* White text for the paragraph */
+}
+
+ol {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button, .next-page-link, .previous-page-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(41, 41, 41);
+    background-color: #ff8c00; /* Orange background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .next-page-link:hover, .previous-page-link:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+    color: white;
+    text-decoration: underline; /* Underline text on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+#contactInfo ul {
+    list-style-type: none;
+    padding: 0;
+    color: #1e1e1e; /* White text for the contact info */
+}
+
+#contactInfo li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #ff8c00; /* Orange text for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff; /* White text on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+.additional-info {
+    margin-top: 20px;
+}
+
+.contact-us-btn {
+    position: absolute; /* Position the button relative to the container */
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us-btn:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-container label {
+    margin: 10px 0 5px;
+}
+
+.login-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login-container .links {
+    margin-top: 20px;
+}
+
+.login-container .links a {
+    color: #ff8c00; /* Orange text for links */
+}
+
+/* styles.css */
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: white; /* White text */
+    text-decoration: none;
+}
